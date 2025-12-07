@@ -1,7 +1,7 @@
 import { createClient } from '@supabase/supabase-js';
 
-// Schlüssel fest hinterlegt für einfachen Account-Wechsel in Bolt
-const supabaseUrl = 'https://vdkrdvlixefpsjwrywku.supabase.co/';
+// Wir tragen die Schlüssel hier direkt ein, damit keine .env Datei nötig ist
+const supabaseUrl = 'https://vdkrdvlixefpsjwrywku.supabase.co';
 const supabaseAnonKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZka3JkdmxpeGVmcHNqd3J5d2t1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjQyMDIwMzAsImV4cCI6MjA3OTc3ODAzMH0.RpVArDYZ9BjBPyzMll8h99z-8QSMuU8QMVJmyvajPCs';
 
 export const supabase = createClient(supabaseUrl, supabaseAnonKey);
